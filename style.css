@@ -1,0 +1,186 @@
+body {
+  display: flex;
+  align-items: center;
+  background-color: #040e1d;
+  justify-content: center;
+  padding-top: 9.5rem;
+  padding-bottom: 9.5rem;
+}
+
+.container {
+  flex-direction: column;
+  width: 21.875rem;
+  height: 37.25rem;
+  flex-shrink: 0;
+  background-color: #041b3d;
+  border-radius: 0.9375rem;
+  display: flex;
+  box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  position: relative;
+  margin: 1.5rem;
+  width: 18.857rem;
+  height: 18.857rem;
+  border-radius: 0.5rem;
+}
+
+.image-equilibrium{
+  width: inherit;
+  height: inherit;
+  border-radius: 0.5rem;
+}
+
+.image-hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:0px;
+    width: inherit;
+    height: inherit;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.image-hover:hover{ 
+    border-radius: 0.5rem;
+    opacity: 0.703;
+    background: #00b7ff;
+}
+
+.eye-hover{
+    height: 3rem;
+    width: 3rem;
+}
+
+.nft-info {
+  display: flex;
+  flex-direction: column;
+  width: 18.875rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.nft-name {
+  color: white;
+  font-family: "Outfit";
+  font-size: 1.375rem;
+  font-weight: 700;
+  height: 1.75rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+.nft-name:hover{
+    color: #00FFF8;
+}
+
+.nft-description {
+  color: #8bacd9;
+  font-size: 1.125rem;
+  font-family: "Outfit";
+}
+
+.price-time-container {
+  display: flex;
+  flex-direction: row;
+  padding: 1.5rem;
+  width: 18.875rem;
+  height: 1.25rem;
+}
+
+.price-time-container img {
+  padding-right: 0.5rem;
+}
+
+.price {
+  color: #00fff8;
+  font-size: 1rem;
+  font-family: "Outfit";
+  font-weight: 600;
+  word-wrap: break-word;
+  padding-right: 6.926rem;
+}
+
+.time-left {
+  color: #8bacd9;
+  font-size: 1rem;
+  font-family: "Outfit";
+  font-weight: 400;
+}
+
+.separation-line {
+  width: 18.875rem;
+  height: 0.063rem;
+  padding: 1.5rem;
+  padding-top: 0rem;
+}
+
+.creator-info {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  padding-top: 0rem;
+}
+.creator-avatar {
+  width: 2.063rem;
+  height: 2.063rem;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 999rem;
+  border-color: whitesmoke;
+}
+
+.creation-of {
+  padding-left: 1rem;
+  color: #8bacd9;
+  font-size: 16px;
+  font-family: Outfit;
+  font-weight: 400;
+  padding-right: 0.313rem;
+}
+
+.creator-name {
+  color: white;
+  font-size: 16px;
+  font-family: Outfit;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.creator-name:hover{ 
+    color: #00b7ff;
+}
+
+@media screen and (max-width: 600px){
+    .container {
+        width: 20.438rem;
+        height: 33.938rem;
+
+      }
+    .image-container{
+        width: 17.375rem;
+        height: 17.375rem;
+        margin-right: 1.563rem;
+    }
+
+    .nft-info {
+        padding-right: 1.563rem;
+        width: 17.375rem;
+    }
+    .price-time-container{
+        padding-right: 1.563rem;
+        padding-bottom: 0.6rem;
+    }
+    .price {
+       padding-right: 5.5rem; 
+    }
+
+    .separation-line{
+        width: 17.375rem;
+        padding-bottom: 1.3rem;
+    }
+}
